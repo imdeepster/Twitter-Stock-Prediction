@@ -1,6 +1,3 @@
-# ===============================================
-# twitter-to-mongo.py v1.0 Created by Sam Delgado
-# ===============================================
 import sys
 
 #sys.path.append('C:\PYTHON\lib\site-packages')
@@ -19,14 +16,14 @@ db.tweets.ensure_index("id", unique=True, dropDups=True)
 collection = db.tweets
 
 # Add the keywords you want to track. They can be cashtags, hashtags, or words.
-keywords = ['#apple','#google','#facebook']
+keywords = ['#MSFT', '$MSFT', '$GOOGL', '#GOOGL']
 
 #create mapping between keywords and collection names
 collectDict = {}
 for keys in keywords:
     collection = "db."+str(keys[1:])
     collection = eval(collection)
-    collectDict[keys] = collection
+    collectDict[keys[1:]] = collection
 
 print(collectDict)   
 
@@ -46,32 +43,41 @@ class StdOutListener(StreamListener):
 
         # Load the Tweet into the variable "t"
         t = json.loads(data)
-
         # Pull important data from the tweet to store in the database.
-        tweet_id = t['id_str']  # The Tweet ID from Twitter in string format
+        #tweet_id = t['id_str']  # The Tweet ID from Twitter in string format
         username = t['user']['screen_name']  # The username of the Tweet author
         followers = t['user']['followers_count']  # The number of followers the Tweet author has
         text = t['text']  # The entire body of the Tweet
-        hashtags = t['entities']['hashtags']  # Any hashtags used in the Tweet
         dt = t['created_at']  # The timestamp of when the Tweet was created
-        language = t['lang']  # The language of the Tweet
 
+        if 'retweeted_status' in t: 
+            retweet_count = len(t['retweeted_status'])
+
+        else:
+            retweet_count = 0
+
+       
+        if t['is_quote_status']:
+            text += ' ' + t['quoted_status']['text']
+            
         # Convert the timestamp string given by Twitter to a date object called "created". This is more easily manipulated in MongoDB.
         created = datetime.datetime.strptime(dt, '%a %b %d %H:%M:%S +0000 %Y')
 
         # Load all of the extracted Tweet data into the variable "tweet" that will be stored into the database
-        tweet = {'id':tweet_id, 'username':username, 'followers':followers, 'text':text, 'hashtags':hashtags, 'language':language, 'created':created}
+        tweet = {'text':text, 'created':created, 'followers' : followers, 'retweet_count' : retweet_count}
 
         # Save the refined Tweet data to MongoDB
-        #print("hashtags",hashtags)
-        for elem in hashtags:
-            if "#" + elem['text'] in keywords: 
-                collection = collectDict["#"+elem['text']]
+        print("text...........", text)
+     
+        for key in keywords:
+            if key in text:
+                print("Adding to database")
+                collection = collectDict[key[1:]]
                 collection.save(tweet)
+                
                 
 
         # Optional - Print the username and text of each Tweet to your console in realtime as they are pulled from the stream
-        #print(username + ':' + ' ' + text)
         print(username)
         return True
 
