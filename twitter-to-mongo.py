@@ -1,6 +1,6 @@
 import sys
 
-#sys.path.append('C:\PYTHON\lib\site-packages')
+sys.path.append('C:\PYTHON\lib\site-packages')
 from pymongo import Connection
 import json
 from tweepy.streaming import StreamListener
@@ -16,7 +16,7 @@ db.tweets.ensure_index("id", unique=True, dropDups=True)
 collection = db.tweets
 
 # Add the keywords you want to track. They can be cashtags, hashtags, or words.
-keywords = ['#MSFT', '$MSFT', '$GOOGL', '#GOOGL']
+keywords = ['#MSFT', '$MSFT', '$GOOGL', '#GOOGL', '#pixel2','#googlepixel','#pixel']
 
 #create mapping between keywords and collection names
 collectDict = {}
@@ -67,18 +67,18 @@ class StdOutListener(StreamListener):
         tweet = {'text':text, 'created':created, 'followers' : followers, 'retweet_count' : retweet_count}
 
         # Save the refined Tweet data to MongoDB
-        print("text...........", text)
-     
-        for key in keywords:
-            if key in text:
-                print("Adding to database")
-                collection = collectDict[key[1:]]
-                collection.save(tweet)
+        #print("text...........", text)
+        if not t['retweeted'] and 'RT @' not in t['text']:
+            for key in keywords:
+                if key in text:
+                    print("Adding to database")
+                    collection = collectDict[key[1:]]
+                    collection.save(tweet)
                 
                 
 
         # Optional - Print the username and text of each Tweet to your console in realtime as they are pulled from the stream
-        print(username)
+        #print(username)
         return True
 
     # Prints the reason for an error to your console
