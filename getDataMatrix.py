@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Nov  1 17:47:44 2017
-
-@author: Bharadwaj
-"""
+#nltk.download('stopwords')
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from scipy.sparse import csr_matrix
@@ -47,16 +42,16 @@ def main(path):
 
 
 	for i in range(0, size):
-	    time_diff = (datetime.strptime(tweettimelist[i], "%Y-%m-%dT%H:%M:%S.%fZ") - min_tweet_time).total_seconds()
-	    timenormlist.append(1+(float(time_diff)/range_tweet_time))
-	    if math.isnan(rtlist[i]):
-		rtnormlist.append(1)
-	    else:
-		rtnormlist.append(1+ float(rtlist[i])/float(max_rt))
-	    if math.isnan(followerslist[i]):
-		followersnormlist.append(1)
-	    else:
-		followersnormlist.append(1+float(followerslist[i])/float(max_followers)) 
+		time_diff = (datetime.strptime(tweettimelist[i], "%Y-%m-%dT%H:%M:%S.%fZ") - min_tweet_time).total_seconds()
+		timenormlist.append(1+(float(time_diff)/range_tweet_time))
+		if math.isnan(rtlist[i]):
+			rtnormlist.append(1)
+		else:
+			rtnormlist.append(1+ float(rtlist[i])/float(max_rt))
+		if math.isnan(followerslist[i]):
+			followersnormlist.append(1)
+		else:
+			followersnormlist.append(1+float(followerslist[i])/float(max_followers)) 
 
 	rows,cols = tfidfvector.nonzero()
 
@@ -65,7 +60,7 @@ def main(path):
 	    
 	scipy.sparse.save_npz(path[:-5]+'.npz', tfidfvector)
 	feature_list = vectorizer.get_feature_names()
-	print(feature_list)
+	#print(feature_list)
 	return tfidfvector, feature_list 
 	
 
