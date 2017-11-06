@@ -1,0 +1,401 @@
+Topic: 0
+['floor', 'fals', 'bargain', 'compliant', 'integr', 'iron']
+[362.8906503255, 262.3706375012]
+Positive: 0.580382405549
+Topic: 1
+['euphoria', 'short', 'downsid']
+[17.5705780453, 2214.5832760470003]
+Negative: 0.992128419816
+Topic: 2
+['live', 'stronger', 'alarm', 'lead', 'favour']
+[1743.4355110152999, 47.5371156171]
+Positive: 0.973457374552
+Topic: 3
+['blow', 'breakthrough', 'wow', 'invent']
+[383.6146439281, 233.756826231]
+Positive: 0.621367624632
+Topic: 4
+['recess', 'nasti', 'right', 'worst', 'defens']
+[1405.75885312, 779.0226977104]
+Positive: 0.643432224419
+Topic: 5
+['solid', 'crazi', 'save', 'drag']
+[604.4374699279999, 450.405549394]
+Positive: 0.573011774128
+Topic: 6
+['impress', 'fib', 'promot', 'commit', 'destroy', 'damag']
+[289.1261964093, 349.1879433167]
+Negative: 0.547047169387
+Topic: 7
+['individu', 'bizarr', 'admir', 'horribl', 'strang', 'awesom', 'collaps']
+[158.6021083538, 166.14794839848]
+Negative: 0.511617919517
+Topic: 8
+['popular', 'problem', 'doubt', 'depend', 'enhanc']
+[271.107660853, 823.5298423709]
+Negative: 0.752331104996
+Topic: 9
+['cheap', 'cheaper', 'better', 'ignor', 'useless', 'complic']
+[1424.846453606, 722.8056667897]
+Positive: 0.663443785925
+Topic: 10
+['fool', 'screw', 'good', 'ridicul', 'pretti', 'motley', 'opposit', 'insight', 'handi', 'worri', 'seamless', 'expens', 'crude', 'wick', 'luck', 'stun', 'easier', 'rut', 'nice']
+[3684.8326282036, 1269.7656667405001]
+Positive: 0.74371975463
+Topic: 11
+['killer', 'disclaim', 'stupid', 'fake', 'hottest', 'gem', 'wonder']
+[337.41252032269995, 844.7248698461001]
+Negative: 0.714574191521
+Topic: 12
+['moron', 'sin', 'worth', 'fat', 'unabl']
+[913.506429685, 173.7693913238]
+Positive: 0.840179108221
+Topic: 13
+['overpr', 'top', 'cri', 'great']
+[7783.70711016, 65.5366565999]
+Positive: 0.991650576979
+Topic: 14
+['sue', 'crook', 'alleg', 'funni', 'deni', 'surpass', 'weird']
+[40.2874252044, 397.2991993618999]
+Negative: 0.907932685913
+Topic: 15
+['issu', 'advanc']
+[62.1289249752, 380.029572775]
+Negative: 0.859487208114
+Topic: 16
+['best']
+[3196.03100205, 0.0]
+Positive: 1.0
+Topic: 17
+['capitul', 'econom', 'mistaken', 'hurt', 'failur', 'reaffirm', 'swift']
+[562.37099098, 361.0088817904]
+Positive: 0.609035357564
+Topic: 18
+['bogu', 'sweet', 'error', 'opinion', 'joke', 'fine']
+[200.02956343760002, 366.50767741619995]
+Negative: 0.64692601119
+Topic: 19
+['bad', 'tank', 'defend']
+[97.7400061366, 1093.280071382]
+Negative: 0.917935887076
+Topic: 20
+['invis', 'shine', 'slow', 'appreci', 'clear', 'threaten', 'crisi', 'weaken']
+[209.23172095729998, 561.6009284398]
+Negative: 0.728564013057
+Topic: 21
+['competit', 'domin', 'aggress', 'bite', 'hype', 'panic']
+[255.19668047599998, 547.7398407727]
+Negative: 0.682170789692
+Topic: 22
+['loss', 'accus', 'freak', 'trump', 'cancer', 'pure', 'shock', 'quiet', 'pig', 'crush', 'cure', 'human', 'excess', 'snag']
+[1299.2506209623, 950.1913265447]
+Positive: 0.577587975721
+Topic: 23
+['death', 'legendari', 'darl', 'hard', 'punch', 'wrong', 'afraid', 'believ', 'shake', 'heaven', 'hater']
+[425.68342248769, 1492.8767377571999]
+Negative: 0.77812349526
+Topic: 24
+['win', 'decad', 'continu', 'dim', 'luxuri']
+[1456.784356339, 136.4187441969]
+Positive: 0.914374542611
+Topic: 25
+['enjoy', 'gift', 'free', 'access', 'rich', 'fantast', 'hope', 'cool']
+[2985.2977394651994, 0.0]
+Positive: 1.0
+Topic: 26
+['elit', 'desir', 'decent', 'tax', 'delay', 'gain', 'complain']
+[1861.2694716851, 825.1484319665]
+Positive: 0.692844352011
+Topic: 27
+['outperform', 'amus', 'trash', 'attract', 'crowd']
+[394.77565892250004, 100.70008446759999]
+Positive: 0.796760818646
+Topic: 28
+['chatter', 'perfectli', 'odd', 'power', 'relax']
+[473.6893116289, 178.8154035846]
+Positive: 0.725955384819
+Topic: 29
+['flaw', 'hail', 'sad', 'unusu', 'extrem', 'misunderstood', 'confid']
+[229.277192015, 504.175928945]
+Negative: 0.687400345758
+Topic: 30
+['mighti', 'hell', 'evalu', 'tough', 'holi', 'fair', 'freez', 'optim', 'pro', 'recommend', 'excel', 'exhaust', 'unlik', 'aw', 'time', 'wild', 'sharp', 'notabl', 'rumor']
+[5684.0029665206, 1477.0431234756002]
+Positive: 0.793739196074
+Topic: 31
+['miss', 'rest']
+[189.680737395, 1250.5311164]
+Negative: 0.868296641987
+Topic: 32
+['fault', 'evil', 'avail', 'person', 'benefit', 'dedic', 'eas']
+[858.3509084053001, 65.9258388847]
+Positive: 0.928673052657
+Topic: 33
+['explod', 'woman', 'classic', 'upgrad', 'fan', 'relief', 'come']
+[3068.0928046646995, 129.4421425175]
+Positive: 0.959518146117
+Topic: 34
+['fave', 'favorit', 'wedg', 'renew', 'charm', 'trap', 'defeat', 'rough', 'bullshit']
+[388.91722280960005, 256.8043853813]
+Positive: 0.602298603417
+Topic: 35
+['knock', 'manipul', 'led', 'lack', 'dog', 'havoc', 'grind', 'wreak', 'narrow', 'suffer']
+[78.9139157613, 620.2480699817401]
+Negative: 0.887130711666
+Topic: 36
+['sound', 'premier', 'partial', 'diverg', 'safe', 'state', 'balanc', 'interest', 'posit', 'lucki']
+[2609.7660823380997, 143.74326702320002]
+Positive: 0.947796339585
+Topic: 37
+['plot', 'myth', 'rival', 'loyal', 'guarante', 'crimin', 'concern']
+[30.514703523799998, 660.5851120164999]
+Negative: 0.955846170354
+Topic: 38
+['stolen', 'debat', 'select', 'adam', 'predatori', 'super', 'bash']
+[156.9642808885, 153.45005435792]
+Positive: 0.505660541624
+Topic: 39
+['endors', 'adjust', 'comfort', 'emerg', 'grand', 'plagu']
+[114.00765197284998, 206.5387450833]
+Negative: 0.644333385058
+Topic: 40
+['attent', 'thank', 'troubl']
+[568.6041537014, 191.483997086]
+Positive: 0.748076592317
+Topic: 41
+['shrug', 'prove', 'challeng', 'stellar', 'whoa', 'cloud']
+[233.3348633988, 440.87202820790003]
+Negative: 0.653912076095
+Topic: 42
+['toppl', 'keen', 'suprem', 'con']
+[32.158600760300004, 182.4390037055]
+Negative: 0.850144642386
+Topic: 43
+['downgrad', 'navig']
+[22.2919621112, 262.776753836]
+Negative: 0.921801443427
+Topic: 44
+['object', 'crap', 'vice', 'intellig', 'winner', 'refus', 'purpos']
+[258.8531338542, 239.2398435787]
+Positive: 0.519688382656
+Topic: 45
+['breakdown', 'expans', 'stab', 'threat']
+[50.819374262, 382.79386593985]
+Negative: 0.882800224831
+Topic: 46
+['credibl', 'fortun', 'knife', 'lost', 'fundament']
+[189.0997692185, 538.5536323087999]
+Negative: 0.740123843548
+Topic: 47
+['prais', 'love', 'easi', 'bastard', 'slaughter', 'slick', 'favor', 'dumb', 'fiasco', 'smart']
+[1782.51315353893, 180.43230412301]
+Positive: 0.908080836674
+Topic: 48
+['excit', 'elimin', 'color', 'wast', 'sustain', 'fresh']
+[377.7644514172, 123.4482307911]
+Positive: 0.753700903482
+Topic: 49
+['open', 'declin']
+[1359.48894717, 1229.42950182]
+Positive: 0.525118490194
+Topic: 50
+['disappoint', 'enough', 'jobless', 'absurd']
+[387.832120823, 427.9581900233]
+Negative: 0.524593372014
+Topic: 51
+['hoard', 'bankrupt', 'glitch', 'moment', 'debt', 'contribut', 'engag']
+[224.0924203696, 1108.7105646693]
+Negative: 0.831863806665
+Topic: 52
+['promis', 'talent', 'heck', 'health', 'fuck']
+[449.5867297676, 144.4129797895]
+Positive: 0.756880386529
+Topic: 53
+['proprietari', 'steal', 'buzz']
+[0.0, 520.94688555275]
+Negative: 1.0
+Topic: 54
+['bug', 'poorli', 'mad', 'angri', 'unlimit', 'amaz']
+[197.0720957149, 465.60398094989]
+Negative: 0.702611724409
+Topic: 55
+['ugli', 'thinner', 'readi', 'offici', 'bum', 'prefer', 'adapt', 'spook']
+[819.9852233592001, 382.89921222209]
+Positive: 0.681682461843
+Topic: 56
+['serious', 'celebr', 'long', 'tempt']
+[1814.15614725, 2308.2734416361004]
+Negative: 0.559930349777
+Topic: 57
+['bolster', 'junk', 'obsolet', 'content', 'instrument', 'beauti']
+[293.1539220824, 239.8164455029]
+Positive: 0.550037938151
+Topic: 58
+['volatil']
+[0.0, 359.636346332]
+Negative: 1.0
+Topic: 59
+['rapid', 'garbag', 'implic', 'realiz', 'recoveri', 'pass', 'ruin']
+[165.12066459647, 237.6487014893]
+Negative: 0.590036684763
+Topic: 60
+['dust', 'dead']
+[0.0, 613.251939706]
+Negative: 1.0
+Topic: 61
+['creativ', 'choppi', 'limit', 'honor']
+[89.70303453529999, 130.5585657105]
+Negative: 0.592743199744
+Topic: 62
+['murder', 'slowli', 'valor']
+[19.3259873939, 170.7510914502]
+Negative: 0.898325523985
+Topic: 63
+['upbeat', 'complex', 'manag']
+[516.7334761087001, 58.859229641]
+Positive: 0.897741529639
+Topic: 64
+['radic', 'resist', 'humor', 'reject']
+[16.662021801, 1169.9749851469999]
+Negative: 0.98595861944
+Topic: 65
+['import', 'drastic', 'contrari', 'welcom', 'difficult']
+[611.93464055, 56.811766605500004]
+Positive: 0.915047369231
+Topic: 66
+['hog', 'monster', 'neg', 'capabl', 'enthusiasm', 'strong']
+[995.2945927064001, 784.027459001]
+Positive: 0.559367311697
+Topic: 67
+['protect', 'desper', 'risk', 'warn', 'bore', 'conflict']
+[135.345084136, 957.9632412221]
+Negative: 0.87620593295
+Topic: 68
+['imagin', 'help', 'tire', 'forc', 'joy', 'mislead', 'badli', 'split', 'industri']
+[1374.8151703657, 499.16495903149996]
+Positive: 0.733633803688
+Topic: 69
+['violat', 'burn', 'rip', 'greatest', 'hedg', 'scare', 'sink']
+[35.0208461858, 3706.1883035862]
+Negative: 0.990639163761
+Topic: 70
+['cheapest', 'lag', 'award', 'bulli', 'bs', 'doom', 'correct']
+[278.6629068899, 233.69806222295]
+Positive: 0.543880044907
+Topic: 71
+['succe', 'quicker', 'resourc', 'advantag', 'incred', 'provid', 'support', 'well', 'brilliant', 'stall', 'sever', 'fall', 'glad', 'sloppi']
+[3084.2706595224, 1255.9413986186698]
+Positive: 0.710626720125
+Topic: 72
+['matur', 'pain', 'bullish', 'weak', 'bearish', 'shark', 'happi', 'except']
+[1431.8114833879001, 1678.4274647964]
+Negative: 0.539645825533
+Topic: 73
+['pathet', 'fri', 'wors', 'break', 'broken', 'won', 'strangl']
+[548.060761734, 1893.3610242640002]
+Negative: 0.775515740509
+Topic: 74
+['perfect', 'fashion', 'pois', 'slump', 'broke', 'mediocr']
+[291.7547011834, 684.93303193563]
+Negative: 0.701281493265
+Topic: 75
+['origin', 'blind', 'geniu', 'gener', 'convinc', 'calm', 'exclus']
+[511.6703717316, 198.45844826549998]
+Positive: 0.720531764552
+Topic: 76
+['trick', 'kill', 'expir', 'su', 'crappi']
+[0.0, 829.6655233071001]
+Negative: 1.0
+Topic: 77
+['poor', 'use', 'gold', 'terribl', 'clearli', 'enemi', 'crack', 'law', 'margin', 'event', 'dare', 'leverag']
+[3188.4595407722004, 974.71425957217]
+Positive: 0.76587231129
+Topic: 78
+['thought', 'slash', 'autonom']
+[610.1593135, 38.7635757684]
+Positive: 0.940264742684
+Topic: 79
+['mar', 'dump', 'success', 'freedom', 'sorri', 'surviv', 'lazi', 'weaker', 'consist', 'patienc', 'lose', 'blast', 'dirti']
+[618.2337593443001, 1828.9870092912702]
+Negative: 0.74737311514
+Topic: 80
+['recov', 'dent', 'educ', 'outsid', 'struggl']
+[481.9597666424, 343.9884058663]
+Positive: 0.583523013531
+Topic: 81
+['streamlin', 'plenti', 'yawn', 'damn', 'explos', 'fun']
+[329.2104552124, 179.4531027208]
+Positive: 0.647206685201
+Topic: 82
+['critic', 'trust', 'curs', 'refresh', 'excus']
+[353.30656739999995, 331.9381720834]
+Positive: 0.515591798146
+Topic: 83
+['patient', 'forget', 'die', 'lean', 'sarcasm', 'hot', 'tumbl', 'pittanc', 'greed', 'mean']
+[485.18772953959996, 1091.28880008308]
+Negative: 0.692232824008
+Topic: 84
+['afford', 'enterpris', 'scam', 'immin']
+[217.14662702729999, 199.139826185]
+Positive: 0.521627896732
+Topic: 85
+['pleas', 'golden']
+[638.385902064, 0.0]
+Positive: 1.0
+Topic: 86
+['like', 'bother', 'question', 'loser', 'dark', 'entertain', 'decis', 'noteworthi', 'strike', 'fear', 'hate']
+[3694.0355234449007, 1115.2084112384]
+Positive: 0.768111489792
+Topic: 87
+['leak', 'signific']
+[89.7804955595, 452.72893631]
+Negative: 0.834508876187
+Topic: 88
+['smooth', 'meaning', 'bia', 'modest', 'logic', 'improv']
+[397.48022221395, 53.6100845565]
+Positive: 0.881154430162
+Topic: 89
+['wise', 'nois', 'fast', 'shame', 'pan', 'magic', 'shit']
+[320.6427956242, 270.7013178345]
+Positive: 0.542227086271
+Topic: 90
+['stabl', 'reason', 'approv']
+[814.8528866546, 0.0]
+Positive: 1.0
+Topic: 91
+['play', 'construct', 'boost', 'flag', 'bust']
+[1503.7920597924, 200.10213411759997]
+Positive: 0.88256187806
+Topic: 92
+['deterior', 'innov', 'inspir', 'hang', 'secret', 'fruit', 'suck']
+[610.8921035319, 652.2794254001]
+Negative: 0.516382304747
+Topic: 93
+['rumour', 'smash', 'crash', 'faster', 'boast', 'secur', 'season', 'proud', 'will', 'frustrat', 'fail', 'disrupt']
+[5994.3976633536995, 1160.5924085193]
+Positive: 0.837792589946
+Topic: 94
+['product', 'clueless', 'danger', 'idiot', 'effect', 'understand', 'respect', 'affect', 'overtak', 'reckless']
+[2539.5368407818996, 268.75264489577006]
+Positive: 0.904300234621
+Topic: 95
+['replac', 'fairli', 'restor', 'smarter']
+[534.9618402955, 0.0]
+Positive: 1.0
+Topic: 96
+['proper', 'botch', 'deserv', 'confus', 'respons']
+[84.89952738314, 65.94817730646]
+Positive: 0.562816169844
+Topic: 97
+['cheer', 'work', 'clean']
+[997.1092952709, 0.0]
+Positive: 1.0
+Topic: 98
+['lemon', 'argument', 'boycott', 'rotten', 'insan', 'ambiti', 'grave']
+[9.63103297099, 284.59381965240004]
+Negative: 0.967266419253
+Topic: 99
+['kind', 'valuabl', 'realist', 'hum', 'pep', 'mistak']
+[667.4432865508, 154.2507495246]
+Positive: 0.812277146051
+
