@@ -1,0 +1,33 @@
+import numpy as np
+import csv
+from sklearn import linear_model, datasets
+
+
+data = open("data_matrix_final_label.csv","r")
+data_read = csv.reader(data)
+
+input = []
+label = []
+for lines in data_read:
+    input.append([float(elem) for elem in lines[0:-1]])
+    label.append(float(lines[-1]))
+
+X = np.array(input)
+Y = np.array(label)
+
+h = .02  # step size in the mesh
+
+logreg = linear_model.LogisticRegression(C=1e5)
+
+# we create an instance of Neighbours Classifier and fit the data.
+logreg.fit(X, Y)
+
+i = 0
+count = 0
+for elem in X:
+    pre = logreg.predict([elem])
+    if pre == Y[i]:
+        count +=1
+    i += 1
+
+print("LR Classifier accuracy:", count)
