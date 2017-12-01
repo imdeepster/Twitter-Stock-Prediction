@@ -1,7 +1,7 @@
 import pandas as pd
 import os
-temp_prefix = "temp/"
-temp_dprefix = "temp/temp/"
+temp_prefix = "temp_LSTM/"
+temp_dprefix = "temp_LSTM/temp/"
 for file in os.listdir(temp_prefix):
     if os.path.isdir(temp_prefix + file):
         continue

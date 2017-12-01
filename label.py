@@ -3,8 +3,8 @@ import sys
 import os
 
 directory_prefix = "data"
-temp_dprefix = "temp/temp/"
-price_prefix = "temp/price_temp/"
+temp_dprefix = "temp_LSTM/temp/"
+price_prefix = "temp_LSTM/price_temp/"
 
 filenames = os.listdir(directory_prefix)
 csv_files = [ filename for filename in filenames if filename.endswith( ".csv" )]
@@ -29,14 +29,15 @@ for file in csv_files:
 		if stock_line:
 			#print("Here 2")
 			#tweet_file = open("data_matrix.csv", "r")
-			tweet_file = open(temp_dprefix + "/data_matrix_" + company + ".csv", "r")
-			tweet_reader = csv.reader(tweet_file)
-			tweet_file.readline()
-			for tweet_line in tweet_reader:
-				#print(company,tweet_line[1],tweet_line[2],stock_line[0])
-				if str(tweet_line[2]) == str(stock_line[0]):
-					# print(company, tweet_line[1], tweet_line[2], stock_line[0])
-					#print("Here 3")
-					tweet_line.append(stock_line[1])
-					tweet_line.append(stock_line[4])
-					stock_writer.writerow(tweet_line)
+			if(os.path.isfile(temp_dprefix + "/data_matrix_" + company + ".csv")):
+				tweet_file = open(temp_dprefix + "/data_matrix_" + company + ".csv", "r")
+				tweet_reader = csv.reader(tweet_file)
+				tweet_file.readline()
+				for tweet_line in tweet_reader:
+					#print(company,tweet_line[1],tweet_line[2],stock_line[0])
+					if str(tweet_line[2]) == str(stock_line[0]):
+						# print(company, tweet_line[1], tweet_line[2], stock_line[0])
+						#print("Here 3")
+						tweet_line.append(stock_line[1])
+						tweet_line.append(stock_line[4])
+						stock_writer.writerow(tweet_line)

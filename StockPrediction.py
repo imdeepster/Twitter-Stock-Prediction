@@ -6,16 +6,25 @@ import calendar
 import time
 import datetime
 
-directory_prefix = "LDA/"
-sent_file_prefix = "Textblob_SA/"
-temp_prefix = "temp/"
+# directory_prefix = "LDA/"
+# sent_file_prefix = "Textblob_SA/"
+# temp_prefix = "temp/"
+
+directory_prefix = "LDA_LSTM/"
+sent_file_prefix = "LSTMSentiment/"
+temp_prefix = "temp_LSTM/"
+
+# filenames = os.listdir(directory_prefix)
+# csv_files = [ filename for filename in filenames if filename.endswith( ".csv" ) and filename.startswith('export_dashboard')]
+#
+# filenames = os.listdir(sent_file_prefix)
+# sent_files = [ filename for filename in filenames if filename.endswith( ".csv" ) and filename.startswith('export_dashboard')]
 
 filenames = os.listdir(directory_prefix)
 csv_files = [ filename for filename in filenames if filename.endswith( ".csv" ) and filename.startswith('export_dashboard')]
 
 filenames = os.listdir(sent_file_prefix)
-sent_files = [ filename for filename in filenames if filename.endswith( ".csv" ) and filename.startswith('export_dashboard')]
-
+sent_files = [ filename for filename in filenames if filename.endswith( ".csv" )]
 
 for file in csv_files:
 

@@ -1,10 +1,13 @@
 # import numpy as np
 # import csv
+# from sklearn.neural_network import MLPClassifier
 # import os
-# from sklearn.naive_bayes import GaussianNB
 #
 # train_prefix = "temp/final/train/"
 # test_prefix = "temp/final/test/"
+#
+# # data = open("data_matrix_final_label.csv","r")
+# # data_read = csv.reader(data)
 #
 # input = []
 # label = []
@@ -19,8 +22,16 @@
 # X = np.array(input)
 # Y = np.array(label)
 #
-# clf = GaussianNB()
-# clf.fit(X,Y)
+# # for lines in data_read:
+# #     input.append([float(elem) for elem in lines[0:-1]])
+# #     label.append(float(lines[-1]))
+# #
+# # X = np.array(input)
+# # Y = np.array(label)
+# clf = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(5,3), random_state=1)
+#
+# clf.fit(X, Y)
+#
 #
 # test_X = []
 # test_Y = []
@@ -35,19 +46,30 @@
 # test_Y = np.array(test_Y)
 # i = 0
 # count = 0
+#
 # for elem in test_X:
 #     pre = clf.predict([elem])
 #     print(pre, test_Y[i])
 #     if pre == test_Y[i]:
 #         count +=1
 #     i += 1
-# print("NB Classifier accuracy:", (count/len(test_Y))*100)
+# print("LR Classifier accuracy:", (count/len(test_Y))*100)
+#
+# # i = 0
+# # count = 0
+# # for elem in X:
+# #     pre = clf.predict([elem])
+# #     if pre == Y[i]:
+# #         count +=1
+# #     i += 1
+# #
+# # print("LSTM Classifier accuracy:", count)
 
 
 import numpy as np
 import csv
 
-from sklearn.naive_bayes import GaussianNB
+from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
@@ -55,7 +77,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn import metrics
 import os
 
-train_prefix = "temp_LSTM/final/train_5/"
+train_prefix = "temp/final/train_5/"
 test_prefix = "temp/final/test/"
 
 input = []
@@ -73,7 +95,7 @@ Y = np.array(label)
 
 X_train, X_test, y_train, y_test = train_test_split(X, Y,
                                                     test_size=0.2)
-std_clf = make_pipeline(StandardScaler(), GaussianNB())
+std_clf = make_pipeline(StandardScaler(),  MLPClassifier(solver='adam', alpha=1e-5, hidden_layer_sizes=(5,3)))
 std_clf.fit(X_train, y_train)
 pred_test_std = std_clf.predict(X_test)
 
